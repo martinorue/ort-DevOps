@@ -1,3 +1,4 @@
+#!/bin/bash
 animals=("perro" "oso" "cerdo" "gato" "caballo" "oveja")
 
 animals_length=${#animals[@]}

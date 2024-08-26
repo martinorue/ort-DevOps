@@ -1,3 +1,4 @@
+#!/bin/bash
 PATH="./ejercicio1.sh"
 if [[ -e $PATH ]]
 then
