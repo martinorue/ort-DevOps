@@ -1,0 +1,1 @@
+echo "El número random fue: $RANDOM" >> /var/tmp/ejercicio10.txt

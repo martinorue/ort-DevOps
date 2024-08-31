@@ -3,8 +3,7 @@
 #En caso de ser un ARCHIVO REGULAR, se deberá de mostrar por pantalla "La ruta: RUTA recibida es un archivo regular".
 #En caso de ser OTRO TIPO DE ARCHIVO, se deberá de mostrar por pantalla "La ruta: RUTA es otro tipo de archivo".
 #Ademas es necesario ejecutar un ls -l sobre la RUTA solicitada.
-PATH="./ejercicio1.sh"
-
+read PATH
 if [[ -e $PATH ]]; then
     if [[ -d $PATH ]]; then
         echo "La ruta: $PATH recibida es un directorio"
@@ -13,7 +12,7 @@ if [[ -e $PATH ]]; then
     else
         echo "La ruta: $PATH es otro tipo de archivo"
     fi
+/bin/ls -l $PATH
 else 
     echo "La ruta: $PATH no existe"
 fi
-/bin/ls -l $PATH

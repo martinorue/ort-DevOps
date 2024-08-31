@@ -13,7 +13,7 @@ if [[ -e $PATH ]]; then
     else
         echo "La ruta: $PATH es otro tipo de archivo"
     fi
+/bin/ls -l $PATH
 else 
     echo "La ruta: $PATH no existe"
 fi
-/bin/ls -l $PATH

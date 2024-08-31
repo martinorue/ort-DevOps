@@ -1,8 +1,8 @@
 #!/bin/bash
-
+# find . -type f | wc -l
 function contar_archivos() {
   numero_archivos=$(ls -l | wc -l) 
-  echo $(($numero_archivos - 1)) 
+  echo $(($numero_archivos - 1))
 }
 
 cantidad=$(contar_archivos)
